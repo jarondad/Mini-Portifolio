@@ -1,17 +1,31 @@
+/* Em um código CSS, os elementos afetados pela estilização são definidos pelas tags ou classes que precedem a abertura das chaves {} */
+
+/* A tag [body] define que apenas os elementos da tag <body> serão afetados pela estilização */
 body {
     background-image: url(../images/fundo-site.jpg);
+    /* O comando background-image: define uma imagem a ser utilizada como plano de fundo da página */
     background-repeat: no-repeat;
+    /* O comando background-repeat: define como será a repetição do elemento no caso da página exceder o tamanho do elemento utilizado como plano de fundo */
     background-size: cover;
+    /* O comando background-size: define o tamanho do elemento utilizado como plano de fundo da página */
     background-position: center;
+    /* O comando background-position: define a posição do elemento designado como plano de fundo da página */
 
     font-family: 'Inconsolata', monospace;
+    /* O comando font-family: define o tipo de fonte a ser utilizada nos elementos de texto */
     color: #f3f3f3;
+    /* O comando color: define uma cor para o elemento de texto */
     font-size: 18px;
+    /* O comando font-size: define um tamanho para os elementos de texto */
     display: flex;
+    /* O comando display: define a forma como os elementos de uma lista estilizada serão exibidos. Neste caso, através da definição [flex], eles podem ser rearranjados de forma flexível */
     justify-content: center;
     align-items: center;
+    /* O comando align-items: define como os itens de uma lista serão alinhados verticalmente */
     min-height: 100vh;
+    /* O comando min-height: define uma altura mínima para o elemento estilizado */
     padding: 30px;
+    /* O comando padding: define o tamanho do espaçamento do padding, que é o espaçamento mais próximo dos elementos */
 }
 
 .cartao {
@@ -96,7 +110,7 @@ body {
 }
 
 .informacao .descricao {
-    font-size: 15Bpx;
+    font-size: 15px;
     text-align: justify;
     max-height: 180px;
     overflow-y: auto;
