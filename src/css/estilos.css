@@ -97,6 +97,7 @@ body {
 
 .informacao .descricao {
     font-size: 15Bpx;
+    text-align: justify;
     max-height: 180px;
     overflow-y: auto;
     padding-right: 15px;
