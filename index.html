@@ -1,36 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
+    <!-- Tag <head>, como o nome sugere, é a cabeça do código, contendo todas as conexões necessárias com arquivos CSS e as importações de conteúdo como fontes utilizadas -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Tag <link> estabelece uma conexão do HTML com alguma outra página ou arquivo através do modificador href -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/estilos.css">
     <link rel="stylesheet" href="./src/css/rolagem.css">
 
     <title>Meu Perfil</title>
+    <!-- Tag <title> define um título para a página, que será exibido na guia do navegador -->
 </head>
 
 <body>
+    <!-- Tag <body>, como o nome sugere, é o corpo da página, contendo tudo o que será exibido, ainda que sem estilização -->
     <main class="cartao">
+        <!-- Tag <main> carrega o conteúdo da página -->
+        <!-- As tags no HTML podem receber uma ou mais classes, que serão utilizadas pelos códigos CSS e JavaScript para definir estilização e automações na página, literalmente agindo como um identificador. Várias tags diferentes podem receber uma ou mais classes iguais -->
         <div class="minhas-informacoes">
+            <!-- Tag <div> é uma divisão, sendo usada para separar estruturas chave dentro da página como blocos distintos -->
             <img src="./src/images/foto-perfil.jpg" alt="Foto de perfil">
+            <!-- Tag <img> carrega uma imagem para a página. Pode-se usar tanto um link interno (da própria máquina), quanto externo -->
+            <!-- O modificador alt serve para informar o usuário, em texto, o que deveria ser exibido no caso de falha no carregamento da imagem -->
             <h1 class="nome">Jaron Damasio</h1>
+            <!-- Tag <h1> formata um texto como título de grau 1 de precedência. Outros títulos podem ser utilizados até o <h6>, quanto maior o número, menor a precedência do título, possuindo formatação de menor destaque -->
             <h2 class="cargo">Desenvolvedor Frontend Junior</h2>
         </div>
 
         <div class="conteudo">
             <ul class="abas">
+                <!-- Tag <ul>, significando "Unordered list", estabelece uma lista desordenada, como o nome sugere. Essa tag apenas admite tags <li> como conteúdo -->
                 <li class="aba selecionado" id="sobre-mim">
+                    <!-- Tag <li> estabelece um elemento de uma tag do tipo lista -->
                     <img src="./src/images/sobre.gif" alt="Ícone sobre mim">
                 </li>
                 <li class="aba" id="minhas-redes">
+                    <!-- O modificador id estabelece um identificador único da tag. Duas tags diferentes, ainda que portadoras das mesmas classes, não podem receber ids iguais -->
                     <img src="./src/images/coracao.gif" alt="Ícone de redes sociais ">
                 </li>
             </ul>
@@ -40,14 +52,11 @@
                     <h3 class="sub-titulo">Sobre</h3>
 
                     <div class="descricao">
-                        <p>Oi! Meu nome é Jaron Damasio</p>
-
+                        <p>Oi! Meu nome é Jaron Damasio.</p>
+                        <!-- Tag <p> estabele um parágrafo de -->
                         <p>
-                            Sou uma pessoa apaixonada por programação desde que iniciei um curso técnico na área de
-                            informática. Sempre tive o sonho de trabalhar com desenvolvimento de sofwares e outras
-                            tecnologias e atualmente comecei a colocar esse sonho em prática estudando <span>HTML, CSS e
-                                JavaScript</span>. Gosto muito de doces e meus principais hobbies são jogar online e
-                            passar um tempo com minha esposa conversando, caminhando ou assistindo algum anime.
+                            Sou uma pessoa apaixonada por programação desde que iniciei um curso técnico na área de informática. Sempre tive o sonho de trabalhar com desenvolvimento de sofwares e outras tecnologias e atualmente comecei a colocar esse sonho em prática estudando <span>HTML, CSS e JavaScript</span>. Gosto muito de doces e meus principais hobbies são jogar online e passar um tempo com minha esposa conversando, caminhando ou assistindo algum anime.
+                            <!-- Tag <span> serve para selecionar um pedaço específico de texto que pode vir a ser estilizado individualmente -->
                         </p>
                     </div>
                 </div>
@@ -56,12 +65,12 @@
 
                     <ul class="redes-sociais">
                         <li>
-                            <a href="https://www.instagram.com/jarondamasio/" target="_blank"
-                                class="curriculo">Instagram</a>
+                            <a href="https://www.instagram.com/jarondamasio/" target="_blank" class="curriculo">Instagram</a>
+                            <!-- Tag <a> é utilizada para criar uma relação entre um link e um determinado texto -->
                         </li>
+                        
                         <li>
-                            <a href="https://www.linkedin.com/in/jaron-damasio-94776614b/" target="_blank"
-                                class="linkedin">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/jaron-damasio-94776614b/" target="_blank" class="linkedin">LinkedIn</a>
                         </li>
                         <li>
                             <a href="https://github.com/jarondad" target="_blank" class="github">GitHub</a>
@@ -72,6 +81,7 @@
         </div>
     </main>
     <script src="./src/js/index.js"></script>
+    <!-- Serve para fazer conexões que não são realizadas na tag <head>, como JavaScript -->
 </body>
 
 </html>
