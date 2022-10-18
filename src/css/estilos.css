@@ -29,9 +29,9 @@ body {
 }
 
 .cartao {
-    background-color: #070b12;
+    background-color: #070b12a6;
     width: 370px;
-    border: 2px solid #e126d9;
+    border: 2px solid #e126d89f;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -82,15 +82,15 @@ body {
 }
 
 .abas .aba.selecionado {
-    background-color: #262626;
+    background-color: #262626a6;
 }
 
 .conteudo .informacoes-abas {
-    background-color: #262626;
+    background-color: #262626a6;
 }
 
 .abas .aba:hover {
-    background-color: #414141;
+    background-color: #414141a6;
 }
 
 .informacoes-abas .informacao {
