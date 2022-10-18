@@ -1,14 +1,24 @@
+/* Em um código CSS, os elementos afetados pela estilização são definidos pelas tags ou classes que precedem a abertura das chaves {} */
+
+/* O símbolo [*] define que a estilização será aplicada a todos os elementos da página */
 * {
-    margin: 0;
+    margin: 0; 
+    /* O comando [margin:] define o tamanho do espaçamento da margem, que é o espaçamento mais distante dos elementos */
     padding: 0;
+    /* O comando [padding:] define o tamanho do espaçamento do padding, que é o espaçamento mais próximo dos elementos */
     box-sizing: border-box;
 }
 
+/* A tag [ul] define que apenas os elementos das tags <ul> serão afetados pela estilização */
 ul {
     list-style: none;
+    /* O comando [list-style:] define o tipo de exibição de lista da(s) tag(s) do tipo lista no HTML */
 }
 
+/* A tag [a] define que apenas as tags <a> serão afetadas pela estilização */
 a {
     text-decoration: none;
+    /* O comando [text-decoration:] define o tipo de decoração aplicado ao texto ancorado */
     color: #000;
+    /* O comando [color:] define uma cor para o elemento de texto */
 }
