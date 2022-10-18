@@ -3,43 +3,51 @@
 /* A tag [body] define que apenas os elementos da tag <body> serão afetados pela estilização */
 body {
     background-image: url(../images/fundo-site.jpg);
-    /* O comando background-image: define uma imagem a ser utilizada como plano de fundo da página */
+    /* O comando [background-image:] define uma imagem a ser utilizada como plano de fundo da página */
     background-repeat: no-repeat;
-    /* O comando background-repeat: define como será a repetição do elemento no caso da página exceder o tamanho do elemento utilizado como plano de fundo */
+    /* O comando [background-repeat:] define como será a repetição do elemento no caso da página exceder o tamanho do elemento utilizado como plano de fundo */
     background-size: cover;
-    /* O comando background-size: define o tamanho do elemento utilizado como plano de fundo da página */
+    /* O comando [background-size:] define o tamanho do elemento utilizado como plano de fundo da página */
     background-position: center;
-    /* O comando background-position: define a posição do elemento designado como plano de fundo da página */
+    /* O comando [background-position:] define a posição do elemento designado como plano de fundo da página */
 
     font-family: 'Inconsolata', monospace;
-    /* O comando font-family: define o tipo de fonte a ser utilizada nos elementos de texto */
+    /* O comando [font-family:] define o tipo de fonte a ser utilizada nos elementos de texto */
     color: #f3f3f3;
-    /* O comando color: define uma cor para o elemento de texto */
+    /* O comando [color:] define uma cor para o elemento de texto */
     font-size: 18px;
-    /* O comando font-size: define um tamanho para os elementos de texto */
+    /* O comando [font-size:] define um tamanho para os elementos de texto */
     display: flex;
-    /* O comando display: define a forma como os elementos de uma lista estilizada serão exibidos. Neste caso, através da definição [flex], eles podem ser rearranjados de forma flexível */
+    /* O comando [display:] define a forma como os elementos de uma lista estilizada serão exibidos. Neste caso, através da definição [flex], eles podem ser rearranjados de forma flexível */
     justify-content: center;
     align-items: center;
-    /* O comando align-items: define como os itens de uma lista serão alinhados verticalmente */
+    /* O comando [align-items:] define como os itens de uma lista serão alinhados verticalmente */
     min-height: 100vh;
-    /* O comando min-height: define uma altura mínima para o elemento estilizado */
+    /* O comando [min-height:] define uma altura mínima para o elemento estilizado */
     padding: 30px;
-    /* O comando padding: define o tamanho do espaçamento do padding, que é o espaçamento mais próximo dos elementos */
+    /* O comando [padding:] define o tamanho do espaçamento do padding, que é o espaçamento mais próximo dos elementos */
 }
 
+/* A classe [.cartao] define que os elementos da classe .cartao serão afetados pela estilização. Todas as classes são chamadas com um [.] (ponto) antes do nome e separadas entre si por um espaço */
 .cartao {
     background-color: #070b12a6;
+    /* O comando [background-color:] define uma cor para o plano de fundo do elemento */
     width: 370px;
+    /* O comando [width:] define uma largura para o elemento */
     border: 2px solid #e126d89f;
+    /* O comando [border:] define uma borda para o elemento */
     border-radius: 10px;
+    /* O comando [border-radius:] define um raio para os cantos da borda */
     overflow: hidden;
 }
 
+/* É sempre interessante utilizar de duas a três classes como um método para exibir a localização do elemento no arquivo HTML, com a classe mais à direita sendo o elemento específico a ser estilizado e a(s) classe(s) à esquerda sendo classes "paternas" */
 .cartao .minhas-informacoes {
     padding-top: 20px;
+    /* O comando [padding-top:] define o tamanho do padding superior de um elemento, não afetando os outros lados */
     display: flex;
     flex-direction: column;
+    /* O comando [flex-direction:] define como os elementos afetados pelo comando [display:flex] serão organizados */
     align-items: center;
     gap: 10px;
 }
@@ -49,6 +57,7 @@ body {
     border: 4px solid #02d08f;
     width: 25%;
     height: 25%;
+    /* O comando [height:] define uma altura para o elemento */
 }
 
 .minhas-informacoes .nome {
@@ -62,6 +71,7 @@ body {
 
 .cartao .conteudo {
     margin-top: 15px;
+    /* O comando [margin-top:] define o tamanho da margem superior de um elemento, não afetando os outros lados */
 }
 
 .conteudo .abas {
@@ -74,7 +84,9 @@ body {
     justify-content: center;
     padding: 10px 0;
     cursor: pointer;
+    /* O comando [cursor:] define uma interação do elemento com o cursor do mouse */
     transition: background-color 0.2s ease-in-out;
+    /* O comando [transition:] define uma transição (basicamente, uma animação) do elemento ao se interagir com ele */
 }
 
 .conteudo .abas img {
@@ -106,15 +118,19 @@ body {
 .informacao .sub-titulo {
     font-size: 22px;
     margin-bottom: 25px;
+    /* O comando [margin-bottom:] define o tamanho da margem inferior do elemento, não afetando os outros lados */
     text-align: center;
+    /* O comando [text-align:] define um alinhamento para o elemento de texto */
 }
 
 .informacao .descricao {
     font-size: 15px;
     text-align: justify;
     max-height: 180px;
+    /* O comando [max-height:] define uma altura máxima para o elemento */
     overflow-y: auto;
     padding-right: 15px;
+    /* O comando [padding-right:] define o tamanho do padding do lado direito do elemento, não afetando os outros lados */
 }
 
 .informacao .descricao span {
@@ -142,6 +158,7 @@ body {
 
 .informacoes-abas .informacao .redes-sociais li a:hover {
     opacity: 0.8;
+    /* O comando [opacity:] define uma opacidade para um elemento */
 }
 
 .informacao .redes-sociais .curriculo {
